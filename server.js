@@ -33,7 +33,7 @@ function createTemplate (data){
         <head>
             <title>
                 ${title}
-                image:'  <img src="/ui/madi.png" class="img-medium"/>',
+                <img src="/ui/madi.png">
                
             </title>
            <meta name="viewport" content="width=device-width, initial-scale=1"/>
