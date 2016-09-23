@@ -5,7 +5,10 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne={
+
+
+var articles{
+     articleOne={
     title: 'Article One | Mashroor Alam',
     heading: 'Article one',
     date: '26th Sept 2016',
@@ -20,6 +23,23 @@ var articleOne={
                     Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one 
                 </p>`
 };
+     articleTwo={ title: 'Article Two | Mashroor Alam',
+    heading: 'Article Two',
+    date: '27th Sept 2016',
+    
+   
+    content: `
+                <p> Hello this is article one, Hello this is article one , Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one  
+                </p>
+                
+                <p>
+                    
+                    Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one 
+                </p>`
+};
+  
+}
+
 
 function createTemplate (data){
         var title=data.title;
@@ -72,17 +92,12 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function(req,res){
-   res.send(createTemplate(articleOne));
+app.get('/:articleName', function(req,res){
+    var articleName=req.params.articleName;
+   res.send(createTemplate(articles[articleName]));
 });
 
-app.get('/article-two', function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
 
-app.get('/article-three', function(req,res){
-   res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
