@@ -9,6 +9,7 @@ var articleOne={
     title: 'Article One | Mashroor Alam',
     heading: 'Article one',
     date: '26th Sept 2016',
+    
    
     content: `
                 <p> Hello this is article one, Hello this is article one , Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one  
@@ -31,7 +32,8 @@ function createTemplate (data){
         <html>
         <head>
             <title>
-                 ${image}
+                ${title}
+                image:'  <img src="/ui/madi.png" class="img-medium"/>',
                
             </title>
            <meta name="viewport" content="width=device-width, initial-scale=1"/>
