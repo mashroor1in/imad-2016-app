@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 
 
 var articles{
-     articleOne={
+     articleOne:{
     title: 'Article One | Mashroor Alam',
     heading: 'Article one',
     date: '26th Sept 2016',
@@ -23,7 +23,7 @@ var articles{
                     Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one Hello this is article one 
                 </p>`
 };
-     articleTwo={ title: 'Article Two | Mashroor Alam',
+     articleTwo:{ title: 'Article Two | Mashroor Alam',
     heading: 'Article Two',
     date: '27th Sept 2016',
     
@@ -38,7 +38,7 @@ var articles{
                 </p>`
 };
   
-}
+};
 
 
 function createTemplate (data){
