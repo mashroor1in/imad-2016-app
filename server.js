@@ -11,7 +11,7 @@ var articles={
      articleOne:{
     title: 'Article One | Mashroor Alam',
     heading: 'Article one',
-    date: '26th Sept 2016',
+    date: '26th September 2016',
     
    
     content: `
