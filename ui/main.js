@@ -6,6 +6,6 @@ var img=document.getElementById('image');
 img.onclick=function(){
   
     img.style.marginRight='200px';
-     img.style.marginLeft='200px';
+     img.style.marginLeft='400px';
     
 };
