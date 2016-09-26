@@ -5,7 +5,7 @@ element.innerHTML="New Value";
 var img=document.getElementById('image');
 img.onclick=function(){
   
-    img.style.marginLeft='200px';
+    img.style.marginRight='200px';
      
     
 };
