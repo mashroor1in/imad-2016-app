@@ -1,18 +1,13 @@
-console.log('Mash Loaded!');
+var button=document.getElementById("button");
+var counter =0;
 
 
-var img=document.getElementById('image');
-var marginleft=0;
-
-
-function moveLeft(){
-  marginleft=marginleft+1;
-  img.style.marginLeft=marginleft+'px';
-  
-}
-img.onclick=function(){
-    var interval=setInterval(moveLeft,50);
-   
-    
+button.onclick = function(){
+    counter=counter+1;
+    var display=document.getElementById("snap1");
+    display.innerHTML=counter.toString();
     
 };
+
+
+
