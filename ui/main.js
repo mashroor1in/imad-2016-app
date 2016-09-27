@@ -1,9 +1,10 @@
 console.log('Mash Loaded!');
-var element =document.getElementById('newText');
-element.innerHTML="New Value";
+
 
 var img=document.getElementById('image');
 var marginleft=0;
+
+
 function moveLeft(){
   marginleft=marginleft+1;
   img.style.marginLeft=marginleft+'px';
