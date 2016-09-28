@@ -20,7 +20,7 @@ button.onclick = function(){
    
    
    };
-   request.open('GET', 'mashroor1in.imad.hasura-app.io/counter', true);
+   request.open('GET', 'http://mashroor1in.imad.hasura-app.io/counter', true);
    request.send(null);
 };
 
