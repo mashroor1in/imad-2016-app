@@ -106,7 +106,7 @@ app.get('/submit-name', function(req, res){
     res.send(JSON.stringify(names));
     
     
-    res.send(names);
+   
 });
 
 app.get('/:articleName', function(req,res){
